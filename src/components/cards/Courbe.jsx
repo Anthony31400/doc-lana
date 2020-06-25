@@ -1,6 +1,6 @@
 import React from 'react';
-import './courbe.css';
-import courbe from '../photo/courbe.png';
+import './cards.css';
+import courbe from '../../photo/courbe.png';
 
 const Courbe = () => {
   return (

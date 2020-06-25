@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TopCountryDisplay from './TopCountryDisplay';
+import './cards.css';
 
 const countries = [
   {

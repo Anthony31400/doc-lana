@@ -1,3 +1,26 @@
+/* TopCountry */
+
+.display-country {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.display-county-name {
+  width: 30%;
+}
+
+.display-county-operation {
+  width: 30%;
+}
+
+.display-county-price {
+  width: 30%;
+}
+
+/* NewsCards */
+
 #slider {
   position: relative;
   max-width: 100%;
@@ -58,4 +81,34 @@
   95% {
     left: -200vw; /*3ème image*/
   }
+}
+
+/* Courbe */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Resume */
+
+.resumeList {
+  list-style: none;
+}
+
+.ResumeInfo {
+  display: flex;
+  width: 100%;
+}
+
+.nom {
+  width: 30%;
+}
+
+.infoValue {
+  width: 30%;
+}
+
+.infoTrend {
+  width: 30%;
 }

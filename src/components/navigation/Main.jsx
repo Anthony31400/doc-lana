@@ -1,9 +1,9 @@
 import React from 'react';
 import './globalContainer.css';
-import Resume from './Resume';
-import Courbe from './Courbe';
-import NewsCard from './NewsCard';
-import TopCountry from './TopCountry';
+import Resume from '../cards/Resume';
+import Courbe from '../cards/Courbe';
+import NewsCard from '../cards/NewsCard';
+import TopCountry from '../cards/TopCountry';
 
 function Main() {
   return (
@@ -13,7 +13,7 @@ function Main() {
       </div>
       <div className="courbe card">
         <div className="overviewcard">
-          <p>Tendance d'évolution des tarifs moyen des opérations en Europe</p>
+          <p>Tendance dévolution des tarifs moyen des opérations en Europe</p>
         </div>
         <Courbe />
       </div>

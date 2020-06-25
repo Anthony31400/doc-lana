@@ -5,24 +5,24 @@ import './cards.css';
 const countries = [
   {
     id: 1,
-    name: 'France',
+    name: 'Ukraine',
     operation: {
       nose: {
-        type: 'Nose',
-        price: '850 €',
-        lastVariation: '-50€',
-        lastVariationPourcent: '-8%',
-        position: '-11%'
+        type: 'Nez',
+        price: 2500,
+        lastVariation: -150,
+        lastVariationPourcent: '-6%',
+        position: '-17%'
       },
       lips: {
-        type: 'Lips',
+        type: 'Lèvres',
         price: '1100 €',
         lastVariation: '+100€',
         lastVariationPourcent: '-10%',
         position: '-7%'
       },
       cheeks: {
-        type: 'Cheeks',
+        type: 'Joues',
         price: '700 €',
         lastVariation: '-50€',
         lastVariationPourcent: '-6%',
@@ -32,51 +32,51 @@ const countries = [
   },
   {
     id: 2,
-    name: 'Israel',
+    name: 'Turquie',
     operation: {
       nose: {
-        type: 'Nose',
-        price: '950 €',
-        lastVariation: '-50€',
-        lastVariationPourcent: '-7%',
-        position: '-9%'
+        type: 'Nez',
+        price: 2700,
+        lastVariation: +50,
+        lastVariationPourcent: '+4%',
+        position: '-13%'
       },
       lips: {
-        type: 'Lips',
+        type: 'Lèvres',
         price: '1050 €',
         lastVariation: '-50€',
         lastVariationPourcent: '-7%',
-        position: '-8%'
+        position: '-12%'
       },
       cheeks: {
-        type: 'Cheeks',
+        type: 'Joues',
         price: '800 €',
         lastVariation: '+50€',
         lastVariationPourcent: '+7%',
-        position: '-7%'
+        position: '-9%'
       }
     }
   },
   {
     id: 3,
-    name: 'Turkey',
+    name: 'Israel',
     operation: {
       nose: {
-        type: 'Nose',
-        price: '700 €',
-        lastVariation: '-100€',
-        lastVariationPourcent: '-7%',
-        position: '-11%'
+        type: 'Nez',
+        price: 3100,
+        lastVariation: +100,
+        lastVariationPourcent: '+3%',
+        position: '-9%'
       },
       lips: {
-        type: 'Lips',
+        type: 'Lèvres',
         price: '950 €',
         lastVariation: '-50€',
         lastVariationPourcent: '-5%',
         position: '-10%'
       },
       cheeks: {
-        type: 'Cheeks',
+        type: 'Joues',
         price: '650 €',
         lastVariation: '+50€',
         lastVariationPourcent: '+6%',
@@ -95,13 +95,25 @@ class TopCountry extends Component {
   render() {
     return (
       <div>
-        <h3>Les meilleures destinations</h3>
+        <div className="overviewcard">
+          <p>Meilleures destinations</p>
+        </div>
+        <div className="country">
+          <p className="country-name">Pays</p>
+          <p className="country-operation">Opération</p>
+          <p className="country-price">Prix</p>
+          <p className="country-lastVariation">Dernière variation</p>
+        </div>
+        <hr />
         <div>
           {countries.map(country => (
             <TopCountryDisplay
               name={country.name}
               operation={country.operation.nose.type}
               price={country.operation.nose.price}
+              lastVariation={country.operation.nose.lastVariation}
+              lastVariationPourcent={country.operation.nose.lastVariationPourcent}
+              position={country.operation.nose.position}
             />
           ))}
         </div>

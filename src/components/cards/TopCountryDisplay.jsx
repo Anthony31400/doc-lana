@@ -9,12 +9,23 @@ class TopCountryDisplay extends Component {
   }
 
   render() {
-    const { name, operation, price } = this.props;
+    const { name, operation, price, lastVariation, lastVariationPourcent, position } = this.props;
     return (
       <div className="display-country">
-        <p className="display-county-name">{name}</p>
-        <p className="display-county-operation">{operation}</p>
-        <p className="display-county-price">{price}</p>
+        <p className="display-country-name">{name}</p>
+        <p className="display-country-operation">{operation}</p>
+        <p className="display-country-price">{price} €</p>
+        <p
+          className={
+            lastVariation < 0
+              ? 'display-country-lastVariation'
+              : 'display-country-lastVariation-pos'
+          }
+        >
+          {lastVariation} €
+        </p>
+        {/* <p className="display-country-lastVariationPourcent">{lastVariationPourcent}</p> */}
+        <p className="display-country-position">Total économisé :{position}</p>
       </div>
     );
   }
@@ -23,7 +34,10 @@ class TopCountryDisplay extends Component {
 TopCountryDisplay.propTypes = {
   name: PropTypes.string.isRequired,
   operation: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired
+  price: PropTypes.string.isRequired,
+  lastVariation: PropTypes.string.isRequired,
+  lastVariationPourcent: PropTypes.string.isRequired,
+  position: PropTypes.string.isRequired
 };
 
 export default TopCountryDisplay;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewsCard.css';
+import './cards.css';
 
 const article = [
   {
@@ -28,7 +28,6 @@ class NewsCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.displayArticle = this.displayArticle.bind(this);
   }
 
   render() {

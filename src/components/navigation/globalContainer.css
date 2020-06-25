@@ -200,24 +200,3 @@ hr {
 .tendance {
   overflow: scroll;
 }
-
-.resumeList {
-  list-style: none;
-}
-
-.ResumeInfo {
-  display: flex;
-  width: 100%;
-}
-
-.nom {
-  width: 30%;
-}
-
-.infoValue {
-  width: 30%;
-}
-
-.infoTrend {
-  width: 30%;
-}

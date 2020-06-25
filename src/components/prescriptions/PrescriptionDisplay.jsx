@@ -9,7 +9,7 @@ class PrescriptionDisplay extends Component {
   render() {
     return (
       <div className="prescription-list">
-        <h4>Liste</h4>
+        <h4>blablabla</h4>
       </div>
     );
   }

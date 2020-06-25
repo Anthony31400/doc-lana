@@ -8,7 +8,6 @@ import TopCountry from './TopCountry';
 function Main() {
   return (
     <div className="main grid main-cards">
-      <div className="actual card" />
       <div className="courbe card">
         <div className="overviewcard">
           <p>Tendance d'évolution des tarifs moyen des opérations en Europe</p>

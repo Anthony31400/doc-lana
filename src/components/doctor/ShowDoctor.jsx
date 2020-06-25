@@ -1,4 +1,5 @@
 import React from 'react';
+import Doctor from './Doctor';
 
 const medecin = [
   {
@@ -28,13 +29,15 @@ const medecin = [
 ];
 
 function ShowDoctor() {
-  const allDoctor = medecin.map(doc => (
-    <div className="ShowDoctor">
-      <h3>{doc.name}</h3>
-      <p>{doc.adress}</p>
-      <p>{doc.speciality}</p>
-    </div>
-  ));
+  const allDoctor = (
+    <ul>
+      {medecin.map(doc => (
+        <li key={doc.id}>
+          <Doctor {...doc} />
+        </li>
+      ))}
+    </ul>
+  );
   return <div>{allDoctor}</div>;
 }
 

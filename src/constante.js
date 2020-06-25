@@ -1,7 +1,3 @@
-import React, { Component } from 'react';
-import PrescriptionDisplay from './PrescriptionDisplay';
-import './PrescriptionList.css';
-
 const prescription = [
   {
     id: 1,
@@ -107,28 +103,54 @@ const prescription = [
   }
 ];
 
-class PrescriptionList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      ...prescription
-    };
+const medecin = [
+  {
+    name: 'Dr Sylvie Bien',
+    speciality: 'Médecin généraliste',
+    adress: '36 rue des bons vivants 31100 Toulouse'
+  },
+  {
+    name: 'Dr Didier Raoult',
+    speciality: "Disciple de l'hydroxyChloroquine",
+    adress: '27 rue de la haute 13100 Marseille'
+  },
+  {
+    name: 'Dr Claire Voyance',
+    speciality: 'Psychiatre',
+    adress: '36 rue du soleil radieux 31100 Toulouse'
+  },
+  {
+    name: 'Dr Doc Gyneco',
+    speciality: 'Gynecologue',
+    adress: '1 Enceinte du bébés Hurlant 31100 Toulouse'
   }
+];
 
-  render() {
-    return (
-      <div className="prescription-list">
-        <h2>Mes ordonnances</h2>
-        {prescription.map(post => (
-          <div className="prescription-small-view">
-            <h5>{post.disease}</h5>
-            <p>{post.date}</p>
-            <p>{post.treatmentDuration}</p>
-          </div>
-        ))}
-      </div>
-    );
+const pharmacy = [
+  {
+    name: 'Pharmacie Lafayette Tolosane',
+    adress: '20 Avenue Tolosane',
+    distance: '500m'
+  },
+  {
+    name: 'Pharmacie des Facs',
+    adress: '84 route de Narbonne',
+    distance: '800m'
+  },
+  {
+    name: 'Pharmacie des Cotaux',
+    adress: '2 rue des palmiers',
+    distance: '1.2km'
+  },
+  {
+    name: 'Pharmacie du Férétra',
+    adress: '2 impasse du Feretra',
+    distance: '2km'
   }
-}
+];
 
-export default PrescriptionList;
+export default {
+  prescription,
+  medecin,
+  pharmacy
+};

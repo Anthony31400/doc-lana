@@ -120,10 +120,19 @@ hr {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.overviewedcard {
+
+.overviewcard {
   align-self: flex-start;
+  padding: 5px;
   width: 100%;
+  background-color: royalblue;
+  color: #ddd;
+}
+.overviewcard p {
+  margin: auto;
+  text-align: right;
 }
 /* Force varying heights to simulate dynamic content */
 .card:first-child {
@@ -175,7 +184,7 @@ hr {
     display: none;
   }
   .card:nth-child(2) {
-    display: block;
+    display: flex;
     grid-area: card2;
   }
 }

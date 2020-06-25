@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
 import Main from './Main';
+import NewsCard from './NewsCard';
 
 class GlobalContaineur extends Component {
   constructor(props) {

@@ -28,7 +28,6 @@ class NewsCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-    this.displayArticle = this.displayArticle.bind(this);
   }
 
   render() {

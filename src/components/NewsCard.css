@@ -10,13 +10,11 @@
   top: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
   max-height: 100%;
   animation-name: slide;
   animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  animation: slide 10s infinite ease-in-out forwards;
+  animation: slide 10s infinite alternate;
 }
 
 #slides figure {
@@ -45,17 +43,25 @@
 }
 
 @keyframes slide {
+  from {
+    top: 3%;
+  }
+  to {
+    top: -30%;
+  }
+}
+/* 
   0%,
   20%,
   100% {
-    left: 0; /*1ère image*/
+    top: 110%; 
   }
   35%,
   50% {
-    left: -100vw; /*2ème image*/
+    top: 40%;
   }
   70%,
   95% {
-    left: -200vw; /*3ème image*/
+    top: 0; 
   }
-}
+*/

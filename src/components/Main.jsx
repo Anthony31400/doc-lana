@@ -18,6 +18,9 @@ function Main() {
         <Courbe />
       </div>
       <div className="news card">
+        <div className="overviewcard">
+          <p>News</p>
+        </div>
         <NewsCard />
       </div>
       <div className="topcountry card">

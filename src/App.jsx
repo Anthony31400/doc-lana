@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ShowDoctor from './components/doctor/ShowDoctor';
 import Appointement from './components/calendar/Appointement';
-// import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
 // import SideMenu from './components/sidemenu/SideMenu';
 
 class App extends React.Component {
@@ -14,31 +14,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <ShowDoctor />
-        <Appointement />
-        {/*         <Router>
-          <SideMenu />
-           <Switch>
-            <Route path="/userpage">
-              <UserPage />
-            </Route>
-            <Route path="/calendar">
-              <Calendar />
-            </Route>
-            <Route path="/pharmacy">
-              <Pharmacy />
-            </Route>
-            <Route path="/messagerie">
-              <Messagerie />
-            </Route>
+        <Router>
+          <Switch>
             <Route path="/doctor">
-              <Doctor />
+              <ShowDoctor />
             </Route>
-            <Route exact path="/">
-              <Dashboard />
-            </Route>
-          </Switch> 
-        </Router> */}
+          </Switch>
+        </Router>
       </div>
     );
   }

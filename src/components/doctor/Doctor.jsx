@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 import './doctor.css';
 
 function Doctor({ avatar, name, adress, speciality }) {
@@ -16,6 +17,9 @@ function Doctor({ avatar, name, adress, speciality }) {
         </div>
         <p>{adress}</p>
         <p>{speciality}</p>
+        <NavLink to="/mesrdv">
+          <li>Voir mes rdv</li>
+        </NavLink>
       </div>
     </div>
   );

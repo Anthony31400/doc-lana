@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
+import FAQ from './FAQ.jsx';
 
 export default function SideMenu() {
   return (
@@ -28,7 +29,7 @@ export default function SideMenu() {
           <li>Obtenir un devis</li>
         </NavLink>
         <NavLink to="/faq" className="aside_list-item">
-          <li>FAQ</li>
+          <li href={FAQ}>FAQ</li>
         </NavLink>
       </ul>
     </section>

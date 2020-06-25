@@ -39,7 +39,7 @@ class GlobalContaineur extends Component {
         </div>
         <Main />
         <div className="footer">
-          <p>Made with love but sin motivation</p>
+          <p>Made with love but no motivation</p>
         </div>
       </div>
     );

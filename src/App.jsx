@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
-import SideMenu from './components/sidemenu/SideMenu';
+import ShowDoctor from './components/doctor/ShowDoctor';
+// import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
+// import SideMenu from './components/sidemenu/SideMenu';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,9 +13,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Router>
+        <ShowDoctor />
+        {/*         <Router>
           <SideMenu />
-          {/*           <Switch>
+           <Switch>
             <Route path="/userpage">
               <UserPage />
             </Route>
@@ -33,8 +35,8 @@ class App extends React.Component {
             <Route exact path="/">
               <Dashboard />
             </Route>
-          </Switch> */}
-        </Router>
+          </Switch> 
+        </Router> */}
       </div>
     );
   }

@@ -103,29 +103,6 @@ const prescription = [
   }
 ];
 
-const medecin = [
-  {
-    name: 'Dr Sylvie Bien',
-    speciality: 'Médecin généraliste',
-    adress: '36 rue des bons vivants 31100 Toulouse'
-  },
-  {
-    name: 'Dr Didier Raoult',
-    speciality: "Disciple de l'hydroxyChloroquine",
-    adress: '27 rue de la haute 13100 Marseille'
-  },
-  {
-    name: 'Dr Claire Voyance',
-    speciality: 'Psychiatre',
-    adress: '36 rue du soleil radieux 31100 Toulouse'
-  },
-  {
-    name: 'Dr Doc Gyneco',
-    speciality: 'Gynecologue',
-    adress: '1 Enceinte du bébés Hurlant 31100 Toulouse'
-  }
-];
-
 const pharmacy = [
   {
     name: 'Pharmacie Lafayette Tolosane',

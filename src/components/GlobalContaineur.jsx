@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
-import Resume from './Resume';
+import Main from './Main';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class GlobalContaineur extends Component {
         </button>
         <div className="header">
           <div className="logo">
-            <img src="./img/logowhale.svg" alt="whale" />
+            <img src="./img/logowhale.svg" alt="whale" style={{ width: '70px' }} />
           </div>
           <div className="welcome">
             <h1>Hello you</h1>
@@ -42,7 +42,7 @@ class GlobalContaineur extends Component {
             <NavLink to="/" className="aside_list-item">
               Accueil
             </NavLink>
-            <NavLink to="/item1" className="aside_list-item">
+            <NavLink to="/lipo" className="aside_list-item">
               Liposuccion
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">
@@ -59,16 +59,8 @@ class GlobalContaineur extends Component {
             </NavLink>
           </ul>
         </div>
-        <div className="main grid main-cards">
-          <div className="actual card" />
-          <div className="courbe card" />
-          <div className="news card" />
-          <div className="topcountry card">
-            <div className="overviewcard" />
-          </div>
-          <div className="tendance card">
-            <Resume />
-          </div>
+        <div>
+          <Main />
         </div>
         <div className="footer">
           <p>Made with love but sin motivation</p>

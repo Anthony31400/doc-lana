@@ -26,10 +26,10 @@ class GlobalContaineur extends Component {
         </button>
         <div className="header">
           <div className="logo">
-            <h1>logo</h1>
+            <img src="./img/logowhale.svg" alt="whale" />
           </div>
           <div className="welcome">
-            <h1>message</h1>
+            <h1>Hello you</h1>
           </div>
         </div>
         <div className={isActive ? 'aside active' : 'aside'}>

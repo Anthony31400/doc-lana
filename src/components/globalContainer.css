@@ -187,3 +187,7 @@ hr {
 .resumeList {
   list-style: none;
 }
+
+.logo {
+  height: 70px;
+}

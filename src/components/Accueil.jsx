@@ -3,7 +3,7 @@ import './globalContainer.css';
 import Main from './Main';
 import SideMenu from './SideMenu';
 
-class GlobalContaineur extends Component {
+class Accueil extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,13 +37,15 @@ class GlobalContaineur extends Component {
             </button>
           </div>
         </div>
-        <Main />
+        <div>
+          <Main />
+        </div>
         <div className="footer">
-          <p>Made with love but sin motivation</p>
+          <p>Made with love without motivation</p>
         </div>
       </div>
     );
   }
 }
 
-export default GlobalContaineur;
+export default Accueil;

@@ -42,6 +42,11 @@ hr {
   background-color: whitesmoke;
 }
 
+.welcome {
+  display: flex;
+  justify-content: space-around;
+}
+
 .aside {
   grid-area: aside;
   background-color: darkblue;
@@ -81,15 +86,18 @@ hr {
 .aside_list {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  margin-top: 85px;
+  padding: 1px;
+  margin-top: 75px;
+  width: 100%;
   list-style-type: none;
   text-align: center;
 }
 
 .aside_list-item {
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
-  padding: 20px 20px 20px 40px;
+  padding: 20px;
   color: #ddd;
 }
 
@@ -195,4 +203,21 @@ hr {
 
 .resumeList {
   list-style: none;
+}
+
+.ResumeInfo {
+  display: flex;
+  width: 100%;
+}
+
+.nom {
+  width: 30%;
+}
+
+.infoValue {
+  width: 30%;
+}
+
+.infoTrend {
+  width: 30%;
 }

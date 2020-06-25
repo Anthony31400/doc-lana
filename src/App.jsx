@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import GlobalContaineur from './components/GlobalContaineur';
+import Accueil from './components/Accueil';
 // import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
 // import SideMenu from './components/sidemenu/SideMenu';
 
@@ -16,11 +17,11 @@ class App extends React.Component {
       <div className="App">
         <Router>
           <GlobalContaineur />
-          {/*           <Switch>
-            <Route path="/lipo">
-              <Lipo />
+          <Switch>
+            <Route path="/accueil">
+              <Accueil />
             </Route>
-          </Switch> */}
+          </Switch>
         </Router>
       </div>
     );

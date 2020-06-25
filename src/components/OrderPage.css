@@ -1,26 +1,29 @@
 .liste-commandes {
   padding: 1em;
-  background: #555;
-  width: 220px;
+  background: rgb(109, 172, 168);
+  width: 500px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+}
+
+.texte-commande {
+  color: rgb(14, 11, 56);
 }
 
 .date-commande {
-  margin: 0 0 0.25rem;
-  color: #eee;
+  color: rgb(14, 11, 56);
 }
 
 /* Status text */
-.liste-commandes .status .status-text {
+.liste-commandes .statut-commande .status-text {
   color: #999;
   margin: 0;
   display: inline-block;
 }
 
 /* Status (rounded&colored indicator) */
-.liste-commandes .status .status-preparation,
-.liste-commandes .status .status-livree {
+.liste-commandes .statut-commande .status-preparation,
+.liste-commandes .status-commande .status-livree {
   display: inline-block;
   border-radius: 50%;
   width: 8px;
@@ -28,10 +31,10 @@
   margin-right: 6px;
 }
 
-.Contact .status .status-preparation {
+.Contact .statut-commande .status-preparation {
   background: #ee8c0b;
 }
 
-.Contact .status .status-livree {
+.Contact .statut-commande .status-livree {
   background: #40d406;
 }

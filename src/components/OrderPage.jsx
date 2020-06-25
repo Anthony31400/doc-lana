@@ -19,6 +19,7 @@ class Order extends React.Component {
     const { preparation } = this.state;
     return (
       <div className="liste-commandes">
+        <p className="texte-commande">Votre commande du</p>
         <div className="date-commande">
           {this.props.date}
           <div className="statut-commande">

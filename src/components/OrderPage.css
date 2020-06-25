@@ -1,0 +1,37 @@
+.liste-commandes {
+  padding: 1em;
+  background: #555;
+  width: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.date-commande {
+  margin: 0 0 0.25rem;
+  color: #eee;
+}
+
+/* Status text */
+.liste-commandes .status .status-text {
+  color: #999;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Status (rounded&colored indicator) */
+.liste-commandes .status .status-preparation,
+.liste-commandes .status .status-livree {
+  display: inline-block;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+}
+
+.Contact .status .status-preparation {
+  background: #ee8c0b;
+}
+
+.Contact .status .status-livree {
+  background: #40d406;
+}

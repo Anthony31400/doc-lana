@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import PageCommande from './components/PageCommande';
+import OrderList from './components/OrderList';
 
 function App() {
   return (
     <div className="App">
-      <PageCommande />
+      <OrderList />
     </div>
   );
 }

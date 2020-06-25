@@ -15,6 +15,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
+          <GlobalContaineur />
           {/*           <Switch>
             <Route path="/lipo">
               <Lipo />

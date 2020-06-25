@@ -1,11 +1,11 @@
 import React from 'react';
-import './globalContainer.css';
-function Accueil() {
+
+const Accueil = () => {
   return (
     <div>
-      <h3>Accueil</h3>
+      <h1>Accueil</h1>
     </div>
   );
-}
+};
 
 export default Accueil;

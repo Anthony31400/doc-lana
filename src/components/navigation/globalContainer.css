@@ -196,7 +196,3 @@ hr {
     grid-area: card2;
   }
 }
-
-.tendance {
-  overflow: scroll;
-}

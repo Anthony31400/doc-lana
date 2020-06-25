@@ -1,0 +1,209 @@
+p,
+hr {
+  margin: 0;
+}
+.color {
+  background-color: lightblue;
+  border: 1px solid;
+}
+.menu-icon {
+  position: fixed;
+  display: flex;
+  top: 60px;
+  left: 8px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+  color: black;
+}
+.aside_close-icon {
+  position: absolute;
+  visibility: visible;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 50px;
+
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  height: 100vh;
+}
+
+.header {
+  grid-area: header; /* assigns the grid-area label*/
+  background-color: whitesmoke;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: darkblue;
+}
+
+.main {
+  grid-area: main;
+  background-color: white;
+}
+.footer {
+  grid-area: footer;
+  background-color: whitesmoke;
+}
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: darkblue;
+  padding: 0 15px;
+}
+/*hide by default mobile */
+.aside {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 2;
+  transform: translateX(-245px); /* pushes the aide bar in the negative x axis ie off scren */
+}
+.aside.active {
+  transform: translateX(0); /* brings the aside to view port from left */
+}
+
+.aside_list {
+  padding: 0;
+  margin-top: 85px;
+  list-style-type: none;
+}
+
+.aside_list-item {
+  padding: 20px 20px 20px 40px;
+  color: #ddd;
+}
+
+.aside_list-item:hover {
+  background-color: royalblue;
+  cursor: pointer;
+}
+
+/* main, cards mobile*/
+.main-cards {
+  margin: 10px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'card1'
+    'card3'
+    'card4'
+    'card5'
+    'card6'
+    'card7'; /* change the grid template to stack the main_cards one below the other */
+  grid-gap: 10px;
+}
+.card {
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.overviewedcard {
+  align-self: flex-start;
+  width: 100%;
+}
+/* Force varying heights to simulate dynamic content */
+.card:first-child {
+  grid-area: card1;
+}
+
+.card:nth-child(2) {
+  display: none;
+}
+
+.card:nth-child(3) {
+  grid-area: card3;
+}
+.card:nth-child(4) {
+  grid-area: card4;
+}
+.card:nth-child(5) {
+  grid-area: card6;
+}
+.card:nth-child(6) {
+  grid-area: card7;
+  display: none;
+}
+.card:nth-child(7) {
+  grid-area: card5;
+}
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    display: grid; /* applies grid layout affecting it's children */
+    grid-template-columns: 240px 1fr; /* define the number and sizes of columns */
+    grid-template-rows: 80px 1fr 50px; /* defines the number ans sizes of rows*/
+    grid-template-areas:
+      'aside header'
+      'aside main'
+      'aside footer'; /* assigns the labeled grid-area to the grid layout, note there has to be two columns and three rows as per the grid template rows/ columns defined */
+    height: 100vh;
+  }
+  .aside {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateX(0);
+  }
+  .main-cards {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1.7fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'card1 card2'
+      'card1 card3'
+      'card1 card4'
+      'card5 card6';
+    grid-gap: 10px;
+    height: 84vh;
+  }
+  .aside_close-icon {
+    display: none;
+  }
+  .card:nth-child(2) {
+    display: block;
+    grid-area: card2;
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .main-cards {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.2fr;
+    grid-template-rows: 1.7fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'card1 card5 card2'
+      'card1 card3 card7'
+      'card1 card4 card7'
+      'card1 card6 card7';
+    grid-gap: 10px;
+  }
+  .card:nth-child(6) {
+    grid-area: card7;
+    display: block;
+  }
+}

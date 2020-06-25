@@ -16,7 +16,7 @@ export default function SideMenu() {
           <li>Liposuccion</li>
         </NavLink>
         <NavLink to="/abdos" className="aside_list-item">
-          <li>Adbominoplastie</li>
+          <li>Abdominoplastie</li>
         </NavLink>
         <NavLink to="/poitrine" className="aside_list-item">
           <li>Chirurgie des seins</li>

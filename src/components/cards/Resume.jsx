@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './cards.css';
 
 const tendances = [
@@ -45,10 +44,6 @@ function Resume() {
   );
 }
 
-Resume.propTypes = {
-  nom: PropTypes.string.isRequired,
-  valeur: PropTypes.string.isRequired,
-  tendance: PropTypes.string.isRequired
-};
+Resume.propTypes = {};
 
 export default Resume;

@@ -3,6 +3,7 @@ import Calendar from 'react-calendar';
 import './globalContainer.css';
 import 'react-calendar/dist/Calendar.css';
 import ShowDoctor from './doctor/ShowDoctor';
+import PharmacyList from './pharmacy/PharmacyList';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -53,7 +54,12 @@ class GlobalContaineur extends Component {
             <Calendar value={date} />
           </div>
           <div className="rdv card" />
-          <div className="commandes card" />
+          <div className="commandes card">
+            <div className="overviewcard">
+              <p>Mes pharmacies</p>
+            </div>
+            <PharmacyList />
+          </div>
           <div className="medecin card">
             <div className="overviewcard">
               <p>Mes medecins</p>

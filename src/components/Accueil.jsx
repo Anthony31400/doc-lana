@@ -41,7 +41,7 @@ class Accueil extends Component {
           <Main />
         </div>
         <div className="footer">
-          <p>Made with love but sin motivation</p>
+          <p>Made with love without motivation</p>
         </div>
       </div>
     );

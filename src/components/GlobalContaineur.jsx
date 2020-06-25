@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './globalContainer.css';
+import ShowDoctor from './doctor/ShowDoctor';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -31,22 +32,27 @@ class GlobalContaineur extends Component {
           </div>
         </div>
         <div className={isActive ? 'aside active' : 'aside'}>
-          <div class="aside_close-icon">
+          <div className="aside_close-icon">
             <button onClick={this.handlemenu}>&times;</button>
           </div>
-          <ul class="aside_list">
-            <li class="aside_list-item">Menu item1</li>
-            <li class="aside_list-item">Menu item2</li>
-            <li class="aside_list-item">Menu item3</li>
-            <li class="aside_list-item">Menu item4</li>
-            <li class="aside_list-item">Menu item5</li>
+          <ul className="aside_list">
+            <li className="aside_list-item">Menu item1</li>
+            <li className="aside_list-item">Menu item2</li>
+            <li className="aside_list-item">Menu item3</li>
+            <li className="aside_list-item">Menu item4</li>
+            <li className="aside_list-item">Menu item5</li>
           </ul>
         </div>
         <div className="main grid main-cards">
           <div className="prescription card" />
           <div className="rdv card" />
           <div className="commandes card" />
-          <div className="medecin card" />
+          <div className="medecin card">
+            <div className="overviewcard">
+              <p>Mes medecins</p>
+            </div>
+            <ShowDoctor />
+          </div>
           <div className="messagerie card" />
           <div className="robot card" />
           <div className="calendar card" />

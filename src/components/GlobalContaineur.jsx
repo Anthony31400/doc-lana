@@ -25,9 +25,6 @@ class GlobalContaineur extends Component {
           menu
         </button>
         <div className="header">
-          <div className="logo">
-            <img src="./img/logowhale.svg" alt="whale" style={{ width: '70px' }} />
-          </div>
           <div className="welcome">
             <h1>Hello you</h1>
           </div>

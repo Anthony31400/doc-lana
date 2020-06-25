@@ -42,6 +42,11 @@ hr {
   background-color: whitesmoke;
 }
 
+.welcome {
+  display: flex;
+  justify-content: space-around;
+}
+
 .aside {
   grid-area: aside;
   background-color: darkblue;
@@ -197,17 +202,19 @@ hr {
   list-style: none;
 }
 
-.Resume {
+.ResumeInfo {
   display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
-.ResumeInfos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.nom {
+  width: 30%;
 }
 
-.infos {
-  display: inline-block;
+.infoValue {
+  width: 30%;
+}
+
+.infoTrend {
+  width: 30%;
 }

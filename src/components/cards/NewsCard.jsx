@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewsCard.css';
+import './cards.css';
 
 const article = [
   {

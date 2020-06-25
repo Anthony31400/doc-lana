@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './TopCountry.css';
+import './cards.css';
 
 class TopCountryDisplay extends Component {
   constructor(props) {

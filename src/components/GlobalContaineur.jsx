@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Calendar from 'react-calendar';
+import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
 import 'react-calendar/dist/Calendar.css';
 import ShowDoctor from './doctor/ShowDoctor';
@@ -25,7 +26,7 @@ class GlobalContaineur extends Component {
     const { isActive, date } = this.state;
     return (
       <div className="grid-container">
-        <button className="menu-icon" onClick={this.handlemenu}>
+        <button type="submit" className="menu-icon" onClick={this.handlemenu}>
           menu
         </button>
         <div className="header">
@@ -38,14 +39,32 @@ class GlobalContaineur extends Component {
         </div>
         <div className={isActive ? 'aside active' : 'aside'}>
           <div className="aside_close-icon">
-            <button onClick={this.handlemenu}>&times;</button>
+            <button type="submit" onClick={this.handlemenu}>
+              &times;
+            </button>
           </div>
           <ul className="aside_list">
-            <li className="aside_list-item">Menu item1</li>
-            <li className="aside_list-item">Menu item2</li>
-            <li className="aside_list-item">Menu item3</li>
-            <li className="aside_list-item">Menu item4</li>
-            <li className="aside_list-item">Menu item5</li>
+            <NavLink to="/item1" className="aside_list-item">
+              Accueil
+            </NavLink>
+            <NavLink to="/item1" className="aside_list-item">
+              Soins dentaires
+            </NavLink>
+            <NavLink to="/item1" className="aside_list-item">
+              Chirurgie esthétique
+            </NavLink>
+            <NavLink to="/item1" className="aside_list-item">
+              Chirurgie laser
+            </NavLink>
+            <NavLink to="/item1" className="aside_list-item">
+              Destinations
+            </NavLink>
+            <NavLink to="/item1" className="aside_list-item">
+              Trouver un médecin
+            </NavLink>
+            <NavLink to="/item1" className="aside_list-item">
+              Obtenir un devis
+            </NavLink>
           </ul>
         </div>
         <div className="main grid main-cards">

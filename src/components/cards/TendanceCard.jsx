@@ -11,7 +11,7 @@ class TendanceCard extends Component {
     return (
       <div className="tendance">
         <div className="chirurgien">
-          <p>Trouver votre chirurgien</p>
+          <h3>Trouver votre chirurgien</h3>
         </div>
         <select name="specialites" id="spec-select">
           <option value="">--Choisir une spécialité--</option>
@@ -20,6 +20,7 @@ class TendanceCard extends Component {
           <option value="seins">Chirurgie des seins</option>
           <option value="visage">Chirurgie du visage</option>
         </select>
+        <div></div>
         <select name="pays" id="pays-select">
           <option value="">--Choisir un pays--</option>
           <option value="france">France</option>
@@ -30,6 +31,15 @@ class TendanceCard extends Component {
           <option value="roumanie">Roumanie</option>
           <option value="pays-bas">Pays-Bas</option>
         </select>
+        <div></div>
+        <button className="search" type="button">
+          Chercher
+        </button>
+        <hr></hr>
+        <div className="voyage">
+          <h3>Reserver votre séjour</h3>
+          <p>Vous avez trouvé votre </p>
+        </div>
       </div>
     );
   }

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import GlobalContaineur from './components/GlobalContaineur';
-import ShowDoctor from './components/doctor/ShowDoctor';
+// import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
 // import SideMenu from './components/sidemenu/SideMenu';
 
 class App extends React.Component {
@@ -18,7 +18,7 @@ class App extends React.Component {
           <GlobalContaineur />
           <Switch>
             <Route path="/doctor">
-              <ShowDoctor />
+              <GlobalContaineur />
             </Route>
           </Switch>
         </Router>

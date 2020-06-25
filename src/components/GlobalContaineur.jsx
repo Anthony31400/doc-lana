@@ -37,9 +37,7 @@ class GlobalContaineur extends Component {
             </button>
           </div>
         </div>
-        <div>
-          <Main />
-        </div>
+        <Main />
         <div className="footer">
           <p>Made with love but sin motivation</p>
         </div>

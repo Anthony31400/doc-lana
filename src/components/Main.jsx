@@ -15,7 +15,6 @@ function Main() {
         </div>
         <Courbe />
       </div>
-      <div className="news card" />
       <div className="courbe card" />
       <div className="news card">
         <NewsCard />

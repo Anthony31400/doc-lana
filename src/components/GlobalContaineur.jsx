@@ -26,7 +26,7 @@ class GlobalContaineur extends Component {
         </button>
         <div className="header">
           <div className="welcome">
-            <h1>Hello you</h1>
+            <h1>Pimp my fat</h1>
           </div>
         </div>
         <div className={isActive ? 'aside active' : 'aside'}>

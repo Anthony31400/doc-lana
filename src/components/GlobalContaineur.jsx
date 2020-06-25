@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
+import Resume from './Resume';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -65,10 +66,8 @@ class GlobalContaineur extends Component {
           <div className="topcountry card">
             <div className="overviewcard" />
           </div>
-          <div className="countrytendance card">
-            <div className="overviewcard">
-              <p></p>
-            </div>
+          <div className="tendance card">
+            <Resume />
           </div>
         </div>
         <div className="footer">

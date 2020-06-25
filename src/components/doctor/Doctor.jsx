@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './doctor.css';
 
 function Doctor({ name, adress, speciality }) {
   return (

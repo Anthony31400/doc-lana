@@ -1,5 +1,6 @@
 import React from 'react';
 import Doctor from './Doctor';
+import './doctor.css';
 
 const medecin = [
   {
@@ -32,7 +33,7 @@ function ShowDoctor() {
   const allDoctor = (
     <ul>
       {medecin.map(doc => (
-        <li key={doc.id}>
+        <li key={doc.id} className="doclist">
           <Doctor {...doc} />
         </li>
       ))}

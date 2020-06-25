@@ -2,6 +2,8 @@ import React from 'react';
 import './globalContainer.css';
 import Resume from './Resume';
 import Courbe from './Courbe';
+import NewsCard from './NewsCard';
+import TopCountry from './TopCountry';
 
 function Main() {
   return (
@@ -14,8 +16,13 @@ function Main() {
         <Courbe />
       </div>
       <div className="news card" />
+      <div className="courbe card" />
+      <div className="news card">
+        <NewsCard />
+      </div>
+
       <div className="topcountry card">
-        <div className="overviewcard" />
+        <TopCountry />
       </div>
       <div className="tendance card">
         <Resume />

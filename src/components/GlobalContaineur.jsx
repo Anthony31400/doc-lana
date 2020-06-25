@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
+import Main from './Main';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -25,10 +26,10 @@ class GlobalContaineur extends Component {
         </button>
         <div className="header">
           <div className="logo">
-            <h1>logo</h1>
+            <img src="./img/logowhale.svg" alt="whale" style={{ width: '70px' }} />
           </div>
           <div className="welcome">
-            <h1>message</h1>
+            <h1>Hello you</h1>
           </div>
         </div>
         <div className={isActive ? 'aside active' : 'aside'}>
@@ -38,10 +39,10 @@ class GlobalContaineur extends Component {
             </button>
           </div>
           <ul className="aside_list">
-            <NavLink to="/item1" className="aside_list-item">
+            <NavLink to="/" className="aside_list-item">
               Accueil
             </NavLink>
-            <NavLink to="/item1" className="aside_list-item">
+            <NavLink to="/lipo" className="aside_list-item">
               Liposuccion
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">
@@ -58,18 +59,8 @@ class GlobalContaineur extends Component {
             </NavLink>
           </ul>
         </div>
-        <div className="main grid main-cards">
-          <div className="actual card" />
-          <div className="courbe card" />
-          <div className="news card" />
-          <div className="topcountry card">
-            <div className="overviewcard" />
-          </div>
-          <div className="countrytendance card">
-            <div className="overviewcard">
-              <p></p>
-            </div>
-          </div>
+        <div>
+          <Main />
         </div>
         <div className="footer">
           <p>Made with love but sin motivation</p>

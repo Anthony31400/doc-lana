@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
+import NewsCard from './NewsCard';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -61,7 +62,9 @@ class GlobalContaineur extends Component {
         <div className="main grid main-cards">
           <div className="actual card" />
           <div className="courbe card" />
-          <div className="news card" />
+          <div className="news card">
+            <NewsCard />
+          </div>
           <div className="topcountry card">
             <div className="overviewcard" />
           </div>

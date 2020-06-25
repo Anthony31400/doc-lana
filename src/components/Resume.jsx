@@ -1,24 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './globalContainer.css';
 
 const tendances = [
   {
     id: 1,
     nom: 'Dr Didier Raoult',
-    valeur: 'Dr Didier Raoult',
-    tendance: 'Dr Didier Raoult'
+    valeur: '14,056',
+    tendance: '56%'
   },
   {
     id: 2,
     nom: 'Dr Didier Raoult',
-    valeur: 'Dr Didier Raoult',
-    tendance: 'Dr Didier Raoult'
+    valeur: '14,056',
+    tendance: '56%'
   },
   {
     id: 3,
     nom: 'Dr Didier Raoult',
-    valeur: 'Dr Didier Raoult',
-    tendance: 'Dr Didier Raoult'
+    valeur: '14,056',
+    tendance: '56%'
   }
 ];
 
@@ -28,10 +29,12 @@ function Resume() {
       {tendances.map(tends => (
         <li key={tends.id} className="resumeList">
           <section className="Resume">
-            <div>
-              <h4>{tends.nom}</h4>
-              <p>{tends.valeur}</p>
-              <p>{tends.tendance}</p>
+            <div className="ResumeInfos">
+              <h4 className="nom">{tends.nom}</h4>
+              <div className="infos">
+                <span>{tends.valeur}</span>
+                <span>{tends.tendance}</span>
+              </div>
             </div>
           </section>
         </li>

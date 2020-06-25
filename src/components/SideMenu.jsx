@@ -11,16 +11,16 @@ export default function SideMenu() {
       <NavLink to="/lipo" className="aside_list-item">
         <li>Liposuccion</li>
       </NavLink>
-      <NavLink to="/item1" className="aside_list-item">
+      <NavLink to="/abdos" className="aside_list-item">
         <li>Adbominoplastie</li>
       </NavLink>
-      <NavLink to="/item1" className="aside_list-item">
+      <NavLink to="/poitrine" className="aside_list-item">
         <li>Chirurgie des seins</li>
       </NavLink>
-      <NavLink to="/item1" className="aside_list-item">
+      <NavLink to="/visage" className="aside_list-item">
         <li>Chirurgie du visage</li>
       </NavLink>
-      <NavLink to="/item1" className="aside_list-item">
+      <NavLink to="/devis" className="aside_list-item">
         <li>Obtenir un devis</li>
       </NavLink>
     </ul>

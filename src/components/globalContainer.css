@@ -187,3 +187,18 @@ hr {
 .resumeList {
   list-style: none;
 }
+
+.Resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.ResumeInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.infos {
+  display: inline-block;
+}

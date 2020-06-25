@@ -3,11 +3,7 @@ import './App.css';
 import GlobalContaineur from './components/GlobalContaineur';
 
 function App() {
-  return (
-    <div className="App">
-      <GlobalContaineur />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
 export default App;

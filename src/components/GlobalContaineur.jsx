@@ -44,7 +44,7 @@ class GlobalContaineur extends Component {
             </button>
           </div>
           <ul className="aside_list">
-            <NavLink to="/item1" className="aside_list-item">
+            <NavLink to="/" className="aside_list-item">
               Accueil
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">

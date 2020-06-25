@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import GlobalContaineur from './components/GlobalContaineur';
-import ShowDoctor from './components/doctor/ShowDoctor';
 // import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
 // import SideMenu from './components/sidemenu/SideMenu';
 

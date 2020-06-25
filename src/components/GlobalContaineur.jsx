@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
 import Main from './Main';
-import NewsCard from './NewsCard';
+import SideMenu from './SideMenu';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -34,31 +33,12 @@ class GlobalContaineur extends Component {
           </div>
         </div>
         <div className={isActive ? 'aside active' : 'aside'}>
+          <SideMenu />
           <div className="aside_close-icon">
             <button type="submit" onClick={this.handlemenu}>
               &times;
             </button>
           </div>
-          <ul className="aside_list">
-            <NavLink to="/" className="aside_list-item">
-              Accueil
-            </NavLink>
-            <NavLink to="/lipo" className="aside_list-item">
-              Liposuccion
-            </NavLink>
-            <NavLink to="/item1" className="aside_list-item">
-              Adbominoplastie
-            </NavLink>
-            <NavLink to="/item1" className="aside_list-item">
-              Chirurgie des seins
-            </NavLink>
-            <NavLink to="/item1" className="aside_list-item">
-              Chirurgie du visage
-            </NavLink>
-            <NavLink to="/item1" className="aside_list-item">
-              Obtenir un devis
-            </NavLink>
-          </ul>
         </div>
         <div>
           <Main />

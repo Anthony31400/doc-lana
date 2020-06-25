@@ -79,12 +79,16 @@ hr {
 }
 
 .aside_list {
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin-top: 85px;
   list-style-type: none;
+  text-align: center;
 }
 
 .aside_list-item {
+  text-decoration: none;
   padding: 20px 20px 20px 40px;
   color: #ddd;
 }

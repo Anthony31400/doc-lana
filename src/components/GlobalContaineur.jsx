@@ -48,19 +48,16 @@ class GlobalContaineur extends Component {
               Accueil
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">
-              Soins dentaires
+              Liposuccion
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">
-              Chirurgie esthétique
+              Adbominoplastie
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">
-              Chirurgie laser
+              Chirurgie des seins
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">
-              Destinations
-            </NavLink>
-            <NavLink to="/item1" className="aside_list-item">
-              Trouver un médecin
+              Chirurgie du visage
             </NavLink>
             <NavLink to="/item1" className="aside_list-item">
               Obtenir un devis

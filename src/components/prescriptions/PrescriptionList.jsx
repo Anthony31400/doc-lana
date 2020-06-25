@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PrescriptionDisplay from './PrescriptionDisplay';
-import './PrescriptionList.css';
+import './Prescription.css';
 
-const prescription = [
+const prescriptions = [
   {
     id: 1,
     date: '15/06/2020',
@@ -111,21 +111,37 @@ class PrescriptionList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ...prescription
+      indexToDisplay: 0,
+      prescriptionToDisplay: prescriptions[0]
     };
+    this.handleClick = this.handleClick.bind(this);
   }
+
+  handleClick = e => {
+    this.setState({ prescriptionToDisplay: e.target.value });
+  };
+
+  // componentDidUpdate() {
+  //   if (this.state.prescriptionToDisplay !== this.state.prescriptions[this.state.indexToDisplay]) {
+  //     this.setState({ prescriptionToDisplay: this.state.prescriptions[this.state.indexToDisplay] });
+  //   }
+  // }
 
   render() {
     return (
-      <div className="prescription-list">
+      <div>
         <h2>Mes ordonnances</h2>
-        {prescription.map(post => (
-          <div className="prescription-small-view">
-            <h5>{post.disease}</h5>
-            <p>{post.date}</p>
-            <p>{post.treatmentDuration}</p>
-          </div>
-        ))}
+        <div className="prescription-list">
+          {prescriptions.map(prescript => (
+            <PrescriptionDisplay
+              disease={prescript.disease}
+              date={prescript.date}
+              treatmentDuration={prescript.treatmentDuration}
+              index={prescript.id}
+              onClick={this.handleClick}
+            />
+          ))}
+        </div>
       </div>
     );
   }

@@ -1,0 +1,11 @@
+.prescription-list {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.prescription-small-view {
+  display: block;
+  border: 1px solid grey;
+  margin: 2% 10% 2% 10%;
+}

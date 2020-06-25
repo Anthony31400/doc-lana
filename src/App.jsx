@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ShowDoctor from './components/doctor/ShowDoctor';
+import Appointement from './components/calendar/Appointement';
 // import { BrowserRouter as Router /* Switch, Route */ } from 'react-router-dom';
 // import SideMenu from './components/sidemenu/SideMenu';
 
@@ -14,6 +15,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <ShowDoctor />
+        <Appointement />
         {/*         <Router>
           <SideMenu />
            <Switch>

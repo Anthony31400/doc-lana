@@ -2,18 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './doctor.css';
 
-function Doctor({ name, adress, speciality }) {
+function Doctor({ avatar, name, adress, speciality }) {
   return (
     <div className="Doctor">
-      <h3>{name}</h3>
-      <p>{adress}</p>
-      <p>{speciality}</p>
+      <img src={avatar} alt="Doc" className="avatar" />
+      <div className="displayinfos">
+        <div className="name-status">
+          <h3 className="name">{name}</h3>
+          <div className="status">
+            <div className="status-online" />
+            <p className="status-text">Actif</p>
+          </div>
+        </div>
+        <p>{adress}</p>
+        <p>{speciality}</p>
+      </div>
     </div>
   );
 }
 
 Doctor.propTypes = {
   name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
   adress: PropTypes.string.isRequired,
   speciality: PropTypes.string.isRequired
 };

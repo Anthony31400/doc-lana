@@ -135,7 +135,7 @@ hr {
   align-self: flex-start;
   padding: 5px;
   width: 100%;
-  background-color: royalblue;
+  background-color: rgb(39, 75, 180);
   color: #ddd;
 }
 .overviewcard p {

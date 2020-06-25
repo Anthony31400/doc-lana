@@ -9,6 +9,9 @@ function Main() {
   return (
     <div className="main grid main-cards">
       <div className="tendance card">
+        <div className="overviewcard">
+          <p>Les tendances actuelles</p>
+        </div>
         <Resume />
       </div>
       <div className="courbe card">
@@ -24,6 +27,9 @@ function Main() {
         <NewsCard />
       </div>
       <div className="topcountry card">
+        <div className="overviewcard">
+          <p>Les meilleures destinations</p>
+        </div>
         <TopCountry />
       </div>
       <div className="tendance card" />

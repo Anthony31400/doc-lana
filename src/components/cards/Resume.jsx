@@ -36,12 +36,7 @@ function Resume() {
       ))}
     </ul>
   );
-  return (
-    <div className="Resume">
-      <h3>Les opérations en vogue</h3>
-      {allResume}
-    </div>
-  );
+  return <div className="Resume">{allResume}</div>;
 }
 
 Resume.propTypes = {};

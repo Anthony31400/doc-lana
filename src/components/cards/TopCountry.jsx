@@ -95,7 +95,6 @@ class TopCountry extends Component {
   render() {
     return (
       <div>
-        <h3>Les meilleures destinations</h3>
         <div>
           {countries.map(country => (
             <TopCountryDisplay

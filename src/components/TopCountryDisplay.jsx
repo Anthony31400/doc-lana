@@ -10,7 +10,7 @@ class TopCountryDisplay extends Component {
   render() {
     const { name } = this.props;
     return (
-      <div className="prescription-small-view">
+      <div>
         <h5>{name}</h5>
       </div>
     );

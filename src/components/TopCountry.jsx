@@ -85,7 +85,7 @@ class TopCountry extends Component {
   render() {
     return (
       <div>
-        <h2>Mes ordonnances</h2>
+        <h2>Les meilleures destinations</h2>
         <div className="prescription-list">
           {countries.map(country => (
             <TopCountryDisplay name={country.name} />

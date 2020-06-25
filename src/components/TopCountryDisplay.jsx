@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import './TopCountry.css';
 
 class TopCountryDisplay extends Component {
   constructor(props) {
@@ -8,17 +9,21 @@ class TopCountryDisplay extends Component {
   }
 
   render() {
-    const { name } = this.props;
+    const { name, operation, price } = this.props;
     return (
-      <div className="prescription-small-view">
-        <h5>{name}</h5>
+      <div className="display-country">
+        <p className="display-county-name">{name}</p>
+        <p className="display-county-operation">{operation}</p>
+        <p className="display-county-price">{price}</p>
       </div>
     );
   }
 }
 
 TopCountryDisplay.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  operation: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired
 };
 
 export default TopCountryDisplay;

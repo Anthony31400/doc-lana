@@ -1,20 +1,14 @@
 import React, { Component } from 'react';
-import Calendar from 'react-calendar';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
-import 'react-calendar/dist/Calendar.css';
-import ShowDoctor from './doctor/ShowDoctor';
-import PharmacyList from './pharmacy/PharmacyList';
 
 class GlobalContaineur extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isActive: false,
-      date: new Date()
+      isActive: false
     };
     this.handlemenu = this.handlemenu.bind(this);
-    // this.onChange = this.onChange.bind(this);
   }
 
   handlemenu() {
@@ -23,7 +17,7 @@ class GlobalContaineur extends Component {
   }
 
   render() {
-    const { isActive, date } = this.state;
+    const { isActive } = this.state;
     return (
       <div className="grid-container">
         <button type="submit" className="menu-icon" onClick={this.handlemenu}>
@@ -65,25 +59,17 @@ class GlobalContaineur extends Component {
           </ul>
         </div>
         <div className="main grid main-cards">
-          <div className="prescription card" />
-          <div className="calendar card">
-            <Calendar value={date} />
+          <div className="actual card" />
+          <div className="courbe card" />
+          <div className="news card" />
+          <div className="topcountry card">
+            <div className="overviewcard" />
           </div>
-          <div className="rdv card" />
-          <div className="commandes card">
+          <div className="countrytendance card">
             <div className="overviewcard">
-              <p>Mes pharmacies</p>
+              <p></p>
             </div>
-            <PharmacyList />
           </div>
-          <div className="medecin card">
-            <div className="overviewcard">
-              <p>Mes medecins</p>
-            </div>
-            <ShowDoctor />
-          </div>
-          <div className="messagerie card" />
-          <div className="robot card" />
         </div>
         <div className="footer">
           <p>Made with love but sin motivation</p>

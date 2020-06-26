@@ -9,7 +9,7 @@ export default function SideMenu() {
         <img src="./img/logowhale.svg" alt="whale" style={{ width: '70px', marginTop: '20%' }} />
       </div>
       <ul className="aside_list">
-        <NavLink to="/accueil" className="aside_list-item">
+        <NavLink to="/" className="aside_list-item">
           <li>Accueil</li>
         </NavLink>
         <NavLink to="/lipo" className="aside_list-item">
@@ -24,7 +24,7 @@ export default function SideMenu() {
         <NavLink to="/visage" className="aside_list-item">
           <li>Chirurgie du visage</li>
         </NavLink>
-        <NavLink to="/devis" className="aside_list-item">
+        <NavLink to="/reserver" className="aside_list-item">
           <li>Réserver un voyage</li>
         </NavLink>
         <NavLink to="/devis" className="aside_list-item">

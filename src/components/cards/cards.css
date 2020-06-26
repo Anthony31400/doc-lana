@@ -148,3 +148,20 @@ img {
 .infoTrend {
   width: 30%;
 }
+
+/* Trouver chirurgien et voyage */
+
+.chirurgien {
+  margin-top: -250px;
+}
+
+.search,
+.spec-select,
+.pays-select {
+  margin-bottom: 10px;
+}
+
+.title-chir,
+.title-voy {
+  color: royalblue;
+}

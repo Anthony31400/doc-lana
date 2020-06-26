@@ -31,6 +31,9 @@ function Main() {
         <TopCountry />
       </div>
       <div className="tendance card">
+        <div className="overviewcard">
+          <p>Besoin d'aide ?</p>
+        </div>
         <TendanceCard />
       </div>
     </div>

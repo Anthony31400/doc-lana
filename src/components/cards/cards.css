@@ -1,17 +1,27 @@
 /* TopCountry */
 
+.test-country {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .country {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  text-align: center;
 }
 
 .display-country {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 6%;
+  margin-top: 3%;
+  margin-bottom: 2%;
   flex-wrap: wrap;
+  font-size: 85%;
 }
 
 .country-name,
@@ -19,7 +29,10 @@
 .country-price,
 .country-lastVariation {
   width: 25%;
-  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  /* font-style: italic; */
 }
 
 .display-country-name,
@@ -28,12 +41,18 @@
 .display-country-lastVariation,
 .display-country-lastVariation-pos {
   width: 25%;
-  align-items: center;
-  align-content: space-around;
 }
 
-.display-country-position {
-  width: 75%;
+.display-country-position-global {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.display-country-position-value {
+  color: green;
 }
 
 .display-country-lastVariation {

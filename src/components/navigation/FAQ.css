@@ -1,0 +1,31 @@
+.title-faq {
+  background-color: royalblue;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.titre-spec,
+.question,
+.reponse {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.question,
+.reponse {
+  font-size: 15px;
+}
+
+.titre-spec {
+  color: royalblue;
+}
+
+.reponse {
+  font-style: italic;
+}
+
+.question {
+  margin-bottom: 5px;
+}

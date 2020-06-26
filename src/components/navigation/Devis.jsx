@@ -3,7 +3,7 @@ import React from 'react';
 function Devis() {
   return (
     <div className="Devis">
-      <h1>Obtenir un devis</h1>
+      <h1 className="DevisTitle">Obtenir un devis</h1>
       <div className="DevisInfos">
         <img className="DevisImg" src="./img/img1.jpg" alt="chiro" />
         <div className="DevisText">

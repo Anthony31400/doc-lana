@@ -7,39 +7,43 @@ const tendances = [
   {
     id: 1,
     nom: 'Botox',
-    valeur: '69,122',
-    tendance: '56%'
+    valeur: '8900 €',
+    tendance: +7
   },
   {
     id: 2,
     nom: 'Rhinoplastie',
-    valeur: '14,056',
-    tendance: '56%'
+    valeur: '4200 €',
+    tendance: -3
   },
   {
     id: 3,
     nom: 'Lifting',
-    valeur: '38,243',
-    tendance: '56%'
+    valeur: '6100 €',
+    tendance: +5
   }
 ];
 
 function Resume() {
   const allResume = (
-    <ul>
+    <div className="test-resume">
       {tendances.map(tends => (
-        <li key={tends.id} className="resumeList">
-          <div className="ResumeInfo">
-            <p className="nom">{tends.nom}</p>
-            <p className="infoValue">{tends.valeur}</p>
-            <p className="infoTrend">{tends.tendance}</p>
-          </div>
-        </li>
+        <div className="ResumeInfo">
+          <p className="nom">{tends.nom}</p>
+          <p className="infoValue">{tends.valeur}</p>
+          <p className={tends.tendance > 0 ? 'infoTrendPos' : 'infoTrend'}>{tends.tendance} %</p>
+        </div>
       ))}
-    </ul>
+    </div>
   );
   return (
     <div className="Resume">
+      <div className="country">
+        <p className="country-operation">Opération</p>
+        <p className="country-price">Prix moyen</p>
+        <p className="country-lastVariation">Tendance</p>
+      </div>
+      <hr />
       {allResume}
       <NavLink to="/devis" className="DevisButton">
         Obtenir un devis

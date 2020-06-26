@@ -27,9 +27,6 @@ function Main() {
         <NewsCard />
       </div>
       <div className="topcountry card">
-        <div className="overviewcard">
-          <p>Les meilleures destinations</p>
-        </div>
         <TopCountry />
       </div>
       <div className="tendance card" />

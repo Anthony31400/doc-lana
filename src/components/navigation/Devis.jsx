@@ -67,7 +67,7 @@ function Devis() {
           <div className="RhinoText">
             <p>Le coût varie en fonction de la complexité de l'intervention :</p>
             <ul>
-              <li>Rhinoplastie primaire non prise en charge par la Sécurité sociale : 7 950</li>
+              <li>Rhinoplastie primaire non prise en charge par la Sécurité sociale : 7 950 €</li>
               <li>
                 Rhinoplastie secondaire non prise en charge par la Sécurité sociale : 8 950 € à 10
                 950 €

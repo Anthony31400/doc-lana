@@ -207,17 +207,23 @@ hr {
 }
 
 .DevisTitle {
-  background-color: royalblue;
+  background-color: darkblue;
   margin-top: 0;
   margin-bottom: 20px;
   width: 100%;
   text-align: center;
+  color: whitesmoke;
+  padding: 5px;
 }
 
 .DevisInfos,
 .BodyInfo {
   display: flex;
   flex-direction: row;
+}
+
+.DevisButton {
+  text-decoration: none;
 }
 
 .DevisImg {

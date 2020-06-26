@@ -87,7 +87,7 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 1px;
-  margin-top: 75px;
+  margin-top: 40px;
   width: 100%;
   list-style-type: none;
   text-align: center;
@@ -135,7 +135,7 @@ hr {
   align-self: flex-start;
   padding: 5px;
   width: 100%;
-  background-color: royalblue;
+  background-color: rgb(39, 75, 180);
   color: #ddd;
 }
 .overviewcard p {
@@ -176,6 +176,7 @@ hr {
     flex-direction: column;
     position: relative;
     transform: translateX(0);
+    position: sticky;
   }
   .main-cards {
     margin: 10px;
@@ -197,6 +198,24 @@ hr {
   }
 }
 
-.tendance {
+/* Devis */
+
+.Devis {
   overflow: scroll;
+}
+
+.DevisInfos {
+  display: flex;
+  flex-direction: row;
+}
+
+.DevisImg {
+  width: 50%;
+  height: 70%;
+  cursor: pointer;
+}
+
+.DevisText {
+  width: 60%;
+  text-align: left;
 }

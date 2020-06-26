@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './globalContainer.css';
+import FAQ from './FAQ.jsx';
 
 export default function SideMenu() {
   return (
@@ -16,7 +17,7 @@ export default function SideMenu() {
           <li>Liposuccion</li>
         </NavLink>
         <NavLink to="/abdos" className="aside_list-item">
-          <li>Adbominoplastie</li>
+          <li>Abdominoplastie</li>
         </NavLink>
         <NavLink to="/poitrine" className="aside_list-item">
           <li>Chirurgie des seins</li>
@@ -24,11 +25,14 @@ export default function SideMenu() {
         <NavLink to="/visage" className="aside_list-item">
           <li>Chirurgie du visage</li>
         </NavLink>
+        <NavLink to="/reserver" className="aside_list-item">
+          <li>Réserver un voyage</li>
+        </NavLink>
         <NavLink to="/devis" className="aside_list-item">
           <li>Obtenir un devis</li>
         </NavLink>
         <NavLink to="/faq" className="aside_list-item">
-          <li>FAQ</li>
+          <li href={FAQ}>FAQ</li>
         </NavLink>
       </ul>
     </section>

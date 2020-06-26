@@ -9,7 +9,7 @@ class TopCountryDisplay extends Component {
   }
 
   render() {
-    const { name, operation, price, lastVariation, lastVariationPourcent, position } = this.props;
+    const { name, operation, price, lastVariation, position } = this.props;
     return (
       <div>
         <div className="display-country">

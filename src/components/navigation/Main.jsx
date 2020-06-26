@@ -10,6 +10,9 @@ function Main() {
   return (
     <div className="main grid main-cards">
       <div className="tendance card">
+        <div className="overviewcard">
+          <p>Les tendances actuelles</p>
+        </div>
         <Resume />
       </div>
       <div className="courbe card">

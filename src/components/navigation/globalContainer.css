@@ -55,6 +55,7 @@ hr {
 .main {
   grid-area: main;
   background-color: white;
+  overflow: scroll;
 }
 .footer {
   grid-area: footer;
@@ -217,9 +218,13 @@ hr {
 }
 
 .DevisText {
-  margin-top: 5%;
+  margin-top: 2%;
   width: 60%;
   text-align: left;
+}
+
+.Rhino {
+  margin: 5% 0;
 }
 
 .RhinoInfos {
@@ -239,4 +244,15 @@ hr {
   text-align: left;
   margin: 0 auto;
   margin-top: 5%;
+}
+
+.Button {
+  margin: 0 auto;
+}
+
+.LinkDevis {
+  margin-left: 38%;
+  margin-top: 10%;
+  text-decoration: none;
+  color: blue;
 }

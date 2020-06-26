@@ -168,7 +168,19 @@ img {
   color: green;
 }
 
-/* .tendance-card {
-  display: flex;
-  flex-direction: column;
-} */
+/* Trouver chirurgien et voyage */
+
+.chirurgien {
+  margin-top: -250px;
+}
+
+.search,
+.spec-select,
+.pays-select {
+  margin-bottom: 10px;
+}
+
+.title-chir,
+.title-voy {
+  color: royalblue;
+}

@@ -8,6 +8,10 @@
   padding: 5px;
 }
 
+.faq {
+  overflow: scroll;
+}
+
 .titre-spec,
 .question,
 .reponse {

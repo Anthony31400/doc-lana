@@ -105,7 +105,7 @@ class TopCountry extends Component {
           <p className="country-lastVariation">Dernière variation</p>
         </div>
         <hr />
-        <div>
+        <div className="test-country">
           {countries.map(country => (
             <TopCountryDisplay
               name={country.name}

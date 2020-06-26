@@ -9,23 +9,28 @@ class TopCountryDisplay extends Component {
   }
 
   render() {
-    const { name, operation, price, lastVariation, lastVariationPourcent, position } = this.props;
+    const { name, operation, price, lastVariation, position } = this.props;
     return (
-      <div className="display-country">
-        <p className="display-country-name">{name}</p>
-        <p className="display-country-operation">{operation}</p>
-        <p className="display-country-price">{price} €</p>
-        <p
-          className={
-            lastVariation < 0
-              ? 'display-country-lastVariation'
-              : 'display-country-lastVariation-pos'
-          }
-        >
-          {lastVariation} €
-        </p>
-        {/* <p className="display-country-lastVariationPourcent">{lastVariationPourcent}</p> */}
-        <p className="display-country-position">Total économisé :{position}</p>
+      <div>
+        <div className="display-country">
+          <p className="display-country-name">{name}</p>
+          <p className="display-country-operation">{operation}</p>
+          <p className="display-country-price">{price} €</p>
+          <p
+            className={
+              lastVariation < 0
+                ? 'display-country-lastVariation'
+                : 'display-country-lastVariation-pos'
+            }
+          >
+            {lastVariation} €
+          </p>
+          <div className="display-country-position-global">
+            <p className="display-country-position-name">Réduction moyenne :</p>
+            <p className="display-country-position-value">{position}</p>
+          </div>
+        </div>
+        <hr />
       </div>
     );
   }

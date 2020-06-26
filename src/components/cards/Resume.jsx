@@ -1,6 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './cards.css';
+import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
+import Devis from '../navigation/Devis';
 
 const tendances = [
   {
@@ -39,16 +40,19 @@ function Resume() {
   );
   return (
     <div className="Resume">
-      <h3>Les opérations en vogue</h3>
       {allResume}
+      <NavLink to="/devis" className="DevisButton">
+        Obtenir un devis
+      </NavLink>
+      <Router>
+        <Switch>
+          <Route exact path="/devis" component={Devis} />
+        </Switch>
+      </Router>
     </div>
   );
 }
 
-Resume.propTypes = {
-  nom: PropTypes.string.isRequired,
-  valeur: PropTypes.string.isRequired,
-  tendance: PropTypes.string.isRequired
-};
+Resume.propTypes = {};
 
 export default Resume;

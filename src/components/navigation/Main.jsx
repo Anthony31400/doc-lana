@@ -4,6 +4,7 @@ import Resume from '../cards/Resume';
 import Courbe from '../cards/Courbe';
 import NewsCard from '../cards/NewsCard';
 import TopCountry from '../cards/TopCountry';
+import TendanceCard from '../cards/TendanceCard';
 
 function Main() {
   return (
@@ -29,7 +30,9 @@ function Main() {
       <div className="topcountry card">
         <TopCountry />
       </div>
-      <div className="tendance card" />
+      <div className="tendance card">
+        <TendanceCard />
+      </div>
     </div>
   );
 }

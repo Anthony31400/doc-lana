@@ -26,6 +26,44 @@ function Devis() {
           </ul>
         </div>
       </div>
+      <div className="Rhino">
+        <h3>Rhinoplasties</h3>
+        <div className="RhinoInfos">
+          <img src="./img/face.png" alt="face" className="DevisFace" />
+          <div className="RhinoText">
+            <p>Le coût varie en fonction de la complexité de l'intervention :</p>
+            <ul>
+              <li>Rhinoplastie primaire non prise en charge par la Sécurité sociale : 7 950</li>
+              <li>
+                Rhinoplastie secondaire non prise en charge par la Sécurité sociale : 8 950 € à 10
+                950 €
+              </li>
+              <li>
+                Rhinoplastie primaire avec prise en charge par la Sécurité sociale : 7 750 € à 8 950
+                €
+              </li>
+              <li>
+                Rhinoplastie secondaire avec prise en charge par la Sécurité sociale : 8 950 € à 10
+                950 €
+              </li>
+              <li>Profiloplastie : 7 500 € à 10 500 €</li>
+              <li>Rhinoplastie médicale : 500 € à 600 €</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="Body">
+        <h3>Silhouette</h3>
+        <div className="BodyInfo">
+          <img src="./img/body.png" alt="Body" className="BodyImg" />
+          <div className="BodyText">
+            <ul>
+              <li>Liposuccion : 1 500 € à 4 500 €</li>
+              <li>Abdominoplastie : 3 500 € à 4 500 €</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

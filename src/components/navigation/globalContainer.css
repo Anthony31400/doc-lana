@@ -204,7 +204,8 @@ hr {
   overflow: scroll;
 }
 
-.DevisInfos {
+.DevisInfos,
+.BodyInfo {
   display: flex;
   flex-direction: row;
 }
@@ -216,6 +217,26 @@ hr {
 }
 
 .DevisText {
+  margin-top: 5%;
   width: 60%;
   text-align: left;
+}
+
+.RhinoInfos {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.DevisFace,
+.BodyImg {
+  width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+
+.RhinoText,
+.BodyText {
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 5%;
 }

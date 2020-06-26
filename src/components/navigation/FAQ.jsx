@@ -11,7 +11,7 @@ class FAQ extends Component {
     return (
       <div className="faq">
         <h1>Les questions les plus fréquentes</h1>
-        <hr></hr>
+        <hr />
         <h2 className="titre-spec">Liposuccion</h2>
         <p className="question">
           L'opération de la liposuccion apporte-t-elle un résultat définitif ?

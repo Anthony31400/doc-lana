@@ -128,6 +128,18 @@ img {
 
 /* Resume */
 
+.test-resume {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.Resume {
+  width: 100%;
+}
+
 .resumeList {
   list-style: none;
 }
@@ -135,16 +147,29 @@ img {
 .ResumeInfo {
   display: flex;
   width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .nom {
-  width: 30%;
+  width: 33%;
 }
 
 .infoValue {
-  width: 30%;
+  width: 33%;
 }
 
 .infoTrend {
-  width: 30%;
+  width: 33%;
+  color: red;
+}
+
+.infoTrendPos {
+  width: 33%;
+  color: green;
+}
+
+.tendance-card {
+  display: flex;
+  flex-direction: column;
 }

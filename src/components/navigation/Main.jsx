@@ -9,7 +9,7 @@ import TendanceCard from '../cards/TendanceCard';
 function Main() {
   return (
     <div className="main grid main-cards">
-      <div className="tendance card">
+      <div className="tendance-card">
         <div className="overviewcard">
           <p>Les tendances actuelles</p>
         </div>

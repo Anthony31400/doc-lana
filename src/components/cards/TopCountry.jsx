@@ -12,7 +12,7 @@ const countries = [
         price: 2500,
         lastVariation: -150,
         lastVariationPourcent: '-6%',
-        position: '-17%'
+        position: '-33%'
       },
       lips: {
         type: 'Lèvres',
@@ -35,14 +35,14 @@ const countries = [
     name: 'Turquie',
     operation: {
       nose: {
-        type: 'Nez',
+        type: 'Lèvres',
         price: 2700,
         lastVariation: +50,
         lastVariationPourcent: '+4%',
-        position: '-13%'
+        position: '-24%'
       },
       lips: {
-        type: 'Lèvres',
+        type: 'Nez',
         price: '1050 €',
         lastVariation: '-50€',
         lastVariationPourcent: '-7%',
@@ -62,11 +62,11 @@ const countries = [
     name: 'Israel',
     operation: {
       nose: {
-        type: 'Nez',
+        type: 'Joues',
         price: 3100,
         lastVariation: +100,
         lastVariationPourcent: '+3%',
-        position: '-9%'
+        position: '-18%'
       },
       lips: {
         type: 'Lèvres',
@@ -76,7 +76,7 @@ const countries = [
         position: '-10%'
       },
       cheeks: {
-        type: 'Joues',
+        type: 'Nez',
         price: '650 €',
         lastVariation: '+50€',
         lastVariationPourcent: '+6%',

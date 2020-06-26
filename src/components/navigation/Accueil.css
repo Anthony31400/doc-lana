@@ -1,5 +1,17 @@
 .img-accueil {
   border-radius: 180%;
-  height: 500px;
+  height: 400px;
   width: auto;
+}
+
+.title-acc {
+  background-color: royalblue;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.text-acc {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

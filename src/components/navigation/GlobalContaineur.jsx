@@ -45,10 +45,10 @@ class GlobalContaineur extends Component {
             <Route exatc path="/" component={Accueil} />
           </Switch>
           <div className="footer">
-            <p>Made with love but sin motivation</p>
+            <p>Made with love by Team DocLana ♡</p>
           </div>
         </div>
-     </Router>
+      </Router>
     );
   }
 }

@@ -1,17 +1,33 @@
+.AccueilDisplay {
+  overflow: scroll;
+  background-image: url('https://zupimages.net/up/20/26/q2lw.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+}
+
 .img-accueil {
   border-radius: 180%;
-  height: 400px;
+  height: 500px;
   width: auto;
 }
 
 .title-acc {
   background-color: royalblue;
-  margin-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
   width: 100%;
   text-align: center;
 }
 
-.text-acc {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.Accueil {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 12% 45% auto 0;
 }

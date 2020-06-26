@@ -205,6 +205,14 @@ hr {
   overflow: scroll;
 }
 
+.DevisTitle {
+  background-color: royalblue;
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
 .DevisInfos,
 .BodyInfo {
   display: flex;

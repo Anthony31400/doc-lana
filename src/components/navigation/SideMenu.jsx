@@ -25,9 +25,6 @@ export default function SideMenu() {
         <NavLink to="/visage" className="aside_list-item">
           <li>Chirurgie du visage</li>
         </NavLink>
-        <NavLink to="/reserver" className="aside_list-item">
-          <li>Réserver un voyage</li>
-        </NavLink>
         <NavLink to="/devis" className="aside_list-item">
           <li>Obtenir un devis</li>
         </NavLink>

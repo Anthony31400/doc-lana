@@ -133,7 +133,6 @@ img {
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  margin-top: 5%;
 }
 
 .Resume {
@@ -167,11 +166,6 @@ img {
 .infoTrendPos {
   width: 33%;
   color: green;
-}
-
-.tendance-card {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Trouver chirurgien et voyage */

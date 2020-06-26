@@ -11,7 +11,7 @@ class FAQ extends Component {
     return (
       <div className="faq">
         <h1 className="title-faq">Les questions les plus fréquentes</h1>
-        <hr />
+
         <h2 className="titre-spec">Liposuccion</h2>
         <p></p>
         <p className="question">
@@ -67,7 +67,6 @@ class FAQ extends Component {
           d’intervention.
         </p>
         <br></br>
-        <hr />
       </div>
     );
   }

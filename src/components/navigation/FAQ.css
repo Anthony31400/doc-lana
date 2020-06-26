@@ -1,9 +1,15 @@
 .title-faq {
-  background-color: royalblue;
-  margin-bottom: 50px;
+  background-color: darkblue;
+  margin-top: 0;
+  margin-bottom: 20px;
   width: 100%;
   text-align: center;
-  color: white;
+  color: whitesmoke;
+  padding: 5px;
+}
+
+.faq {
+  overflow: scroll;
 }
 
 .titre-spec,

@@ -200,6 +200,10 @@ hr {
 
 /* Devis */
 
+.Devis {
+  overflow: scroll;
+}
+
 .DevisInfos {
   display: flex;
   flex-direction: row;
@@ -213,4 +217,5 @@ hr {
 
 .DevisText {
   width: 60%;
+  text-align: left;
 }

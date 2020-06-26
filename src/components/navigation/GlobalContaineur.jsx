@@ -5,6 +5,7 @@ import Main from './Main';
 import Devis from './Devis';
 import Accueil from './Accueil';
 import SideMenu from './SideMenu';
+import FAQ from './FAQ';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -44,13 +45,14 @@ class GlobalContaineur extends Component {
           <Switch>
             <Route exact path="/visage" component={Main} />
             <Route exact path="/devis" component={Devis} />
+            <Route exact path="/faq" component={FAQ} />
             <Route exact path="/" component={Accueil} />
           </Switch>
           <div className="footer">
             <p>Made with love without any motivation</p>
           </div>
         </div>
-     </Router>
+      </Router>
     );
   }
 }

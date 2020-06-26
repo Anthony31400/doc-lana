@@ -67,7 +67,6 @@ class FAQ extends Component {
           d’intervention.
         </p>
         <br></br>
-        <hr />
       </div>
     );
   }

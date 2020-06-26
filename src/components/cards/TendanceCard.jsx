@@ -32,9 +32,6 @@ class TendanceCard extends Component {
           <option value="pays-bas">Pays-Bas</option>
         </select>
         <div></div>
-        <button className="search" type="button">
-          Chercher
-        </button>
         <div className="voyage">
           <a
             style={{

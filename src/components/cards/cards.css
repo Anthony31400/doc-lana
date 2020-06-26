@@ -1,22 +1,47 @@
 /* TopCountry */
 
+.country {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .display-country {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 10%;
+  margin-top: 6%;
+  flex-wrap: wrap;
 }
 
-.display-county-name {
-  width: 30%;
+.country-name,
+.country-operation,
+.country-price,
+.country-lastVariation {
+  width: 25%;
+  font-style: italic;
 }
 
-.display-county-operation {
-  width: 30%;
+.display-country-name,
+.display-country-operation,
+.display-country-price,
+.display-country-lastVariation,
+.display-country-lastVariation-pos {
+  width: 25%;
+  align-items: center;
+  align-content: space-around;
 }
 
-.display-county-price {
-  width: 30%;
+.display-country-position {
+  width: 75%;
+}
+
+.display-country-lastVariation {
+  color: green;
+}
+
+.display-country-lastVariation-pos {
+  color: red;
 }
 
 /* NewsCards */
@@ -69,6 +94,7 @@
   from {
     top: 3%;
   }
+
   to {
     top: -30%;
   }

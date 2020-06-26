@@ -121,9 +121,14 @@
 
 /* Courbe */
 
-img {
+.Courbe {
   width: 100%;
   height: auto;
+}
+
+.Courbe img {
+  width: 95%;
+  height: 90%;
 }
 
 /* Resume */

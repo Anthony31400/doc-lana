@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './globalContainer.css';
 import Main from './Main';
 import Devis from './Devis';
-/* import Accueil from './Accueil'; */
+import Accueil from './Accueil';
 import SideMenu from './SideMenu';
 
 class GlobalContaineur extends Component {
@@ -43,8 +43,8 @@ class GlobalContaineur extends Component {
           </div>
           <Switch>
             <Route exact path="/visage" component={Main} />
-            {/*             <Route exact path="/" component={Accueil} /> */}
             <Route exact path="/devis" component={Devis} />
+            <Route exact path="/" component={Accueil} />
           </Switch>
           <div className="footer">
             <p>Made with love without any motivation</p>

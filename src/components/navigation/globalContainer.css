@@ -176,6 +176,7 @@ hr {
     flex-direction: column;
     position: relative;
     transform: translateX(0);
+    position: sticky;
   }
   .main-cards {
     margin: 10px;
@@ -195,4 +196,21 @@ hr {
     display: flex;
     grid-area: card2;
   }
+}
+
+/* Devis */
+
+.DevisInfos {
+  display: flex;
+  flex-direction: row;
+}
+
+.DevisImg {
+  width: 50%;
+  height: 70%;
+  cursor: pointer;
+}
+
+.DevisText {
+  width: 60%;
 }

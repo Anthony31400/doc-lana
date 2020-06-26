@@ -4,6 +4,7 @@ import './globalContainer.css';
 import Main from './Main';
 import Accueil from './Accueil';
 import SideMenu from './SideMenu';
+import Devis from './Devis';
 
 class GlobalContaineur extends Component {
   constructor(props) {
@@ -43,9 +44,10 @@ class GlobalContaineur extends Component {
           <Switch>
             <Route exact path="/visage" component={Main} />
             <Route exatc path="/" component={Accueil} />
+            <Route exact path="/devis" component={Devis} />
           </Switch>
           <div className="footer">
-            <p>Made with love but sin motivation</p>
+            <p>Made with love without any motivation</p>
           </div>
         </div>
       </Router>

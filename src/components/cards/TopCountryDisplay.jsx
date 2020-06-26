@@ -9,13 +9,7 @@ class TopCountryDisplay extends Component {
   }
 
   render() {
-    const {
-      name,
-      operation,
-      price,
-      lastVariation,
-      /* lastVariationPourcent */ position
-    } = this.props;
+    const { name, operation, price, lastVariation, position } = this.props;
     return (
       <div className="display-country">
         <p className="display-country-name">{name}</p>
@@ -30,7 +24,6 @@ class TopCountryDisplay extends Component {
         >
           {lastVariation} €
         </p>
-        {/* <p className="display-country-lastVariationPourcent">{lastVariationPourcent}</p> */}
         <p className="display-country-position">Total économisé :{position}</p>
       </div>
     );

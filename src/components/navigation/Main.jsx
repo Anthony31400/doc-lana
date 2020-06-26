@@ -17,7 +17,7 @@ function Main() {
       </div>
       <div className="courbe card">
         <div className="overviewcard">
-          <p>Tendance dévolution des tarifs moyen des opérations en Europe</p>
+          <p>Tendance d'évolution des tarifs moyen des opérations en Europe</p>
         </div>
         <Courbe />
       </div>

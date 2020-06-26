@@ -133,7 +133,6 @@ img {
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-  margin-top: 5%;
 }
 
 .Resume {
@@ -169,7 +168,7 @@ img {
   color: green;
 }
 
-.tendance-card {
+/* .tendance-card {
   display: flex;
   flex-direction: column;
-}
+} */

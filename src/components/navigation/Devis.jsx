@@ -9,7 +9,7 @@ function Devis() {
         <div className="DevisText">
           <h4>Coût moyen d’une consultation : </h4>
           <p>Entre 80 € et 150 €. Généralement, seule la première consultation est payante.</p>
-          <ul style={{ listStyle: 'none' }}>
+          <ul>
             <li>
               Si la consultation préalable concerne une intervention prise en charge par la Sécurité
               sociale, cette consultation préalable est prise en charge par l’assurance maladie, le

@@ -22,8 +22,8 @@ class FAQ extends Component {
         </p>
         <p className="question">Y a-t-il des cicatrices après ?</p>
         <p className="reponse">
-          Les cicatrices d’une lipoaspiration sont discrètes, peu profondes (4mm au maximum), elles
-          sont dissimulées dans un pli naturel.
+          Les cicatrices d’une lipoaspiration sont discrètes, peu profondes", elles sont dissimulées
+          dans un pli naturel.
         </p>
         <h2 className="titre-spec">Abdominoplastie</h2>
         <p className="question">

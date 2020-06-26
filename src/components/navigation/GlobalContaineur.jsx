@@ -49,7 +49,7 @@ class GlobalContaineur extends Component {
             <Route exact path="/" component={Accueil} />
           </Switch>
           <div className="footer">
-            <p>Made with love without any motivation</p>
+            <p>Made with love by Team DocLana ♡</p>
           </div>
         </div>
       </Router>
